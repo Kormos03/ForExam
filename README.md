@@ -1,5 +1,6 @@
 # ForExam
 # CS
+```
  public Something()
  {
      MySqlConnectionStringBuilder builder = new MySqlConnectionStringBuilder();
@@ -24,8 +25,9 @@
      }
      conn.Close();           
  }
-
+```
  # Frontend
+ ```
  const response = await fetch("http://localhost:3000/api/members", {
                 method: "POST",
                 headers:{
@@ -34,8 +36,9 @@
                 },
                 body: JSON.stringify(memberToSend)
             })
-            
+ ```
  Bootstrap cards algorithm:
+ ```
   function ToCards(members: Member[]){
         return <div className="row">
             {
@@ -54,4 +57,5 @@
             }
         </div>
     }
+```
        
