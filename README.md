@@ -79,5 +79,30 @@ export class PaymentService {
     )
   }
 ```
+Find by
+```
+@Injectable()
+export class MemberService {
+  constructor (private readonly db: PrismaService) {}
+  create(createMemberDto: CreateMemberDto) {
+    return this.db.members.create(
+      {data: createMemberDto}
+    );
+  }
+
+  findAll() {
+    return this.db.members.findMany(
+      {
+        select: {
+          id: true,
+          name: true,
+          gender: true,
+          birth_date: true,
+          created_at: true
+        }
+      }
+    );
+  }
+```
 
        
