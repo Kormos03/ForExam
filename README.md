@@ -26,3 +26,32 @@
  }
 
  # Frontend
+ const response = await fetch("http://localhost:3000/api/members", {
+                method: "POST",
+                headers:{
+                    Accept: "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(memberToSend)
+            })
+            
+ Bootstrap cards algorithm:
+  function ToCards(members: Member[]){
+        return <div className="row">
+            {
+                members.map((member) => {
+                    return <div className="col sm-4 md-3 lg-2">
+                        <div className="card border-dark">
+                            <div className="card-body">
+                                <h3>{member.name}</h3>
+                                <p>{member.birth_date}</p>
+                                <p>{member.created_at}</p>
+                                {Picture(member)}
+                            </div>
+                        </div>
+                    </div>
+                })
+            }
+        </div>
+    }
+       
