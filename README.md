@@ -60,4 +60,24 @@
         </div>
     }
 ```
+# Backend
+Add prisma into service constructor
+```
+@Injectable()
+export class PaymentService {
+  constructor ( private readonly db: PrismaService) {}
+
+ async create(member_id: number) {
+    const paid_at: Date = new Date();
+    const amount: number = 5000;
+    const member: any = await this.db.members.findFirstOrThrow(
+      {where: {id: member_id}}
+    )
+    const payment: any = {member_id,paid_at, amount}
+    return this.db.payments.create(
+      {data: payment}
+    )
+  }
+```
+
        
