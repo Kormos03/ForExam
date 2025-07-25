@@ -1,3 +1,5 @@
+## This Repository contains a cheatsheet for important algorithms
+
 # ForExam
 SQl connector
 # CS
