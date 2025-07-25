@@ -1,8 +1,8 @@
 ## This Repository contains a cheatsheet for important algorithms
 
-# ForExam
-SQl connector
-# CS
+# ForExam cheatsheet
+
+## CS SQl connector
 ```
  public Something()
  {
@@ -29,8 +29,8 @@ SQl connector
      conn.Close();           
  }
 ```
- # Frontend
- Fetch
+ ## Frontend 
+ ### Fetch
  ```
  const response = await fetch("http://localhost:3000/api/members", {
                 method: "POST",
@@ -42,7 +42,7 @@ SQl connector
             })
                   const resObj = await response.json();
  ```
- Bootstrap cards algorithm:
+ ### Bootstrap cards algorithm:
  ```
   function ToCards(members: Member[]){
         return <div className="row">
@@ -63,8 +63,8 @@ SQl connector
         </div>
     }
 ```
-# Backend
-Add prisma into service constructor
+## Backend
+### Add prisma into service constructor
 ```
 @Injectable()
 export class PaymentService {
@@ -82,7 +82,7 @@ export class PaymentService {
     )
   }
 ```
-Find by
+### Find by
 ```
 @Injectable()
 export class MemberService {
@@ -106,8 +106,8 @@ export class MemberService {
       }
     );
 ```
+
 ### This repo contains some interesting algorithms for C# (lists or array)
 ``` https://github.com/Kormos03/CS_DolgozatProject/blob/main/Dolgozat.cs ```
-```
 
        
