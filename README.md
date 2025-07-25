@@ -105,7 +105,9 @@ export class MemberService {
         }
       }
     );
-  }
+```
+### This repo contains some interesting algorithms for C# (lists or array)
+``` https://github.com/Kormos03/CS_DolgozatProject/blob/main/Dolgozat.cs ```
 ```
 
        
